@@ -8,7 +8,8 @@
   </head>
   <body class="font-sans bg-white">
     <header>
-      <nav class="flex items-center justify-between p-4 w-100vw h-10vh shadow">
+      <div class="h-10vh"></div>
+      <nav class="fixed top-0 left-0 flex items-center justify-between p-4 w-100vw h-10vh shadow z-40 bg-white">
         <h1 class="text-slate-950 font-bold text-xl antialiased">Moorlands</h1>
         <!-- Hamburger menu -->
         <button id="hamburger-menu" class="text-slate-950 hover:text-slate-900 focus:outline-none">
@@ -24,7 +25,7 @@
             />
           </svg>
       </nav>
-      <div class="off-screen-menu shadow fixed top-0 w-50vw h-100vh bg-white p-6">
+      <div class="off-screen-menu shadow fixed top-0 w-50vw h-100vh bg-white p-6 z-50">
         <ul class="flex flex-col gap-4">
           <li class=""><a href="#services">Services</a></li>
           <li class=""><a href="#about">About</a></li>
@@ -32,41 +33,53 @@
         </ul>
       </div>
     </header>
-    <main class="flex flex-col gap-8 p-4">
-      <section class="flex flex-col gap-4">
+    <main class="flex flex-col gap-12 p-4 z-10">
+      <section id="about" class="flex flex-col gap-4">
         <h1>Welcome to Moorlands</h1>
         <p>
           This is where your stories cultivate.
         </p>
       </section>
-      <section class="flex flex-col items-center">
-          <div class="relative shadow-lg rounded flex flex-col justify-center items-center bg-slate-100 w-67vw">
-            <div class="absolute -top-8 w-16 h-16 rounded-full border-solid border-8 border-white bg-slate-200"></div>
-            <h2 class="underline text-lg font-bold mt-10 text-slate-800">Copywriting</h2>
-            <ul class="list-disc list-inside marker:pl-1">
-              <li>Web content</li>
-              <li>Ads</li>
-              <li>News</li>
-              <li>Press releases</li>
-              <li>Technical writing</li>
-              <li>Ghost writing</li>
-              <li>Editing & proofreading</li>
-            </ul>
-          </div>
-          <div class="flex flex-col justify-center items-center">
-            <div class="w-16 h-16 rounded-full border-solid border-2 border-sky-500"></div>
-            <h2 class="underline">Brand Strategy</h2>
-            <ul class="list-disc list-inside">
-              <li></li>
-            </ul>
-          </div>
-          <div class="flex flex-col justify-center items-center">
-            <div class="w-16 h-16 rounded-full border-solid border-2 border-sky-500"></div>
-            <h2 class="underline">Tutoring</h2>
-            <ul class="list-disc list-inside">
-              <li></li>
-            </ul>
-          </div>
+      <section id="services" class="flex flex-col gap-16 items-center">
+        <div class="flex flex-col items-center gap-2">
+          <h2 class="text-5xl font-bold text-slate-700">Services</h2>
+          <hr class="h-0.5 w-33vw bg-slate-300"/>
+        </div>
+        <div class="relative drop-shadow-lg rounded flex flex-col gap-1 justify-center items-center bg-slate-100 w-67vw pb-4">
+          <div class="absolute -top-12 w-24 h-24 rounded-full border-solid border-8 border-white bg-slate-200"></div>
+          <h3 class="underline text-lg font-bold mt-14 text-slate-800">Copywriting</h2>
+          <ul class="list-disc list-inside marker:pl-1 flex flex-col items-start w-full pl-4">
+            <li>Web content</li>
+            <li>Ads</li>
+            <li>News</li>
+            <li>Press releases</li>
+            <li>Technical writing</li>
+            <li>Ghost writing</li>
+            <li>Editing & proofreading</li>
+          </ul>
+        </div>
+        <div class="relative drop-shadow-lg rounded flex flex-col gap-1 justify-center items-center bg-slate-100 w-67vw pb-4">
+          <div class="absolute -top-12 w-24 h-24 rounded-full border-solid border-8 border-white bg-slate-200"></div>
+          <h3 class="underline text-lg font-bold mt-14 text-slate-800">Brand strategy</h2>
+            <ul class="list-disc list-inside marker:pl-1 flex flex-col items-start w-full pl-4">
+            <li>SWOT analysis</li>
+            <li>Audit research</li>
+            <li>Verbal identification</li>
+            <li>Guidelines</li>
+            <li>Interviews</li>
+            <li>Campaigns</li>
+            <li>Workshop ads</li>
+          </ul>
+        </div>
+        <div class="relative drop-shadow-lg rounded flex flex-col gap-1 justify-center items-center bg-slate-100 w-67vw pb-4">
+          <div class="absolute -top-12 w-24 h-24 rounded-full border-solid border-8 border-white bg-slate-200"></div>
+          <h3 class="underline text-lg font-bold mt-14 text-slate-800">Tutoring</h2>
+          <ul class="list-disc list-inside marker:pl-1 flex flex-col items-start w-full pl-4">
+            <li>Writing</li>
+            <li>Reading comprehension</li>
+            <li>Grammar & mechanics</li>
+          </ul>
+        </div>
       </section>
     </main>
 
