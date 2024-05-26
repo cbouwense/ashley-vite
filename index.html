@@ -27,19 +27,22 @@
       </nav>
       <div class="off-screen-menu shadow fixed top-0 w-50vw h-100vh bg-white p-6 z-50">
         <ul class="flex flex-col gap-4">
-          <li class=""><a href="#services">Services</a></li>
           <li class=""><a href="#about">About</a></li>
+          <li class=""><a href="#services">Services</a></li>
           <li class=""><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </header>
-    <main class="flex flex-col m-auto gap-16 w-80 lg:justify-center p-4 z-10 lg:px-0 lg:py-12 lg:w-[992px]">
+    <main class="flex flex-col m-auto gap-16 w-80 lg:justify-center p-4 pb-12 z-10 lg:px-0 lg:py-12 lg:w-[992px]">
+      <!-- About -->
       <section id="about" class="flex flex-col gap-4">
         <h1>Welcome to Moorlands</h1>
         <p>
           This is where your stories cultivate.
         </p>
       </section>
+
+      <!-- Services -->
       <section id="services" class="flex flex-col gap-16 items-center lg:justify-center lg:w-full">
         <div class="flex flex-col items-center justify-center gap-2">
           <h2 class="text-5xl font-bold text-slate-700">Services</h2>
@@ -94,6 +97,23 @@
             </ul>
           </div>
         </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="flex flex-col gap-8 items-center lg:justify-center lg:w-full">
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h2 class="text-5xl font-bold text-slate-700">Contact</h2>
+          <hr class="h-0.5 w-4/6 bg-slate-300"/>
+        </div>
+        <div class="flex flex-col gap-4 w-full lg:flex-row lg:justify-center lg:items-start lg:h-72">
+          <div class="flex gap-4 -m-1">
+            <img class="w-6 h-6" src="./public/email.svg" />
+            <p class="-ml-1">ashley@email.com</p>
+          </div>
+          <div class="flex gap-4">
+            <img class="w-4 h-4" src="./public/linkedin2.svg" />
+            <a href="https://www.linkedin.com/in/ashley-mazzarella/">LinkedIn profile</a>
+          </div>
       </section>
     </main>
 
