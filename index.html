@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Ashley Mazzarrella</title>
+  </head>
+  <body class="font-sans bg-white">
+    <header>
+      <nav class="flex items-center justify-between p-4 w-100vw h-10vh shadow">
+        <h1 class="text-slate-950 font-bold text-xl antialiased">Moorlands</h1>
+        <!-- Hamburger menu -->
+        <button id="hamburger-menu" class="text-slate-950 hover:text-slate-900 focus:outline-none">
+          <svg
+            class="h-6 w-6 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"
+            />
+          </svg>
+      </nav>
+      <div class="off-screen-menu shadow fixed top-0 w-50vw h-100vh bg-white p-6">
+        <ul class="flex flex-col gap-4">
+          <li class=""><a href="#services">Services</a></li>
+          <li class=""><a href="#about">About</a></li>
+          <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex flex-col gap-8 p-4">
+      <section class="flex flex-col gap-4">
+        <h1>Welcome to Moorlands</h1>
+        <p>
+          This is where your stories cultivate.
+        </p>
+      </section>
+      <section class="flex flex-col items-center">
+          <div class="relative shadow-lg rounded flex flex-col justify-center items-center bg-slate-100 w-67vw">
+            <div class="absolute -top-8 w-16 h-16 rounded-full border-solid border-8 border-white bg-slate-200"></div>
+            <h2 class="underline text-lg font-bold mt-10 text-slate-800">Copywriting</h2>
+            <ul class="list-disc list-inside marker:pl-1">
+              <li>Web content</li>
+              <li>Ads</li>
+              <li>News</li>
+              <li>Press releases</li>
+              <li>Technical writing</li>
+              <li>Ghost writing</li>
+              <li>Editing & proofreading</li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="w-16 h-16 rounded-full border-solid border-2 border-sky-500"></div>
+            <h2 class="underline">Brand Strategy</h2>
+            <ul class="list-disc list-inside">
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="w-16 h-16 rounded-full border-solid border-2 border-sky-500"></div>
+            <h2 class="underline">Tutoring</h2>
+            <ul class="list-disc list-inside">
+              <li></li>
+            </ul>
+          </div>
+      </section>
+    </main>
+
+    <!-- Off screen menu -->
+    <script>
+      const menuToggle = document.querySelector('#hamburger-menu');
+      const offScreenMenu = document.querySelector('.off-screen-menu');
+
+      menuToggle.addEventListener('click', () => {
+        offScreenMenu.classList.add('show');
+      });
+
+      // Mobile
+      menuToggle.addEventListener('touchstart', () => {
+        offScreenMenu.classList.add('show');
+      });
+
+      menuToggle.addEventListener('mouseover', () => {
+        offScreenMenu.classList.add('show');
+      });
+    
+      document.addEventListener('touchend', () => {
+        if (offScreenMenu.classList.contains('show')) {
+          offScreenMenu.classList.remove('show');
+        }
+      });
+
+      offScreenMenu.addEventListener('mouseleave', () => {
+        offScreenMenu.classList.remove('show');
+      });
+
+      // or if they hit the escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          offScreenMenu.classList.remove('show');
+        }
+      });
+  </script>
+  </body>
+</html>
