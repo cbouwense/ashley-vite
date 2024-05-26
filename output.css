@@ -654,6 +654,10 @@ video {
   width: 100%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -745,6 +749,18 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/pencil\.svg\'\)\] {
+  background-image: url('/pencil.svg');
+}
+
+.bg-\[url\(\'pencil\.svg\'\)\] {
+  background-image: url('pencil.svg');
+}
+
+.bg-\[url\(\'\.\/public\/pencil\.svg\'\)\] {
+  background-image: url('./public/pencil.svg');
 }
 
 .fill-current {
