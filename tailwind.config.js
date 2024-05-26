@@ -21,7 +21,7 @@ module.exports = {
           }
     },
   },
-  plugins: []
-//   mode: 'jit'
+  plugins: [],
+  mode: 'jit'
 }
 
